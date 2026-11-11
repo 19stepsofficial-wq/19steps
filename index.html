@@ -4,26 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>19 Steps · ฝึกสติได้ทั้งวัน</title>
-<meta name="description" content="19 Steps แอปฝึกสติที่จัดชุดฝึกได้เองตามเวลาในแต่ละวัน หายใจ นั่งสมาธิ เดินจงกรม โฟกัสกับน้องมาศ สวดมนต์ และฝึกกับลูก">
+<meta name="description" content="19 Steps แอปฝึกสติ จัดชุดฝึกตามเวลาในแต่ละวัน ฝึกแล้วได้แต้มไปปลูกผัก เลี้ยงสัตว์ แต่งบ้านน้องมาศ และมีมุมพักใจให้ลอยความกังวล ย่างเรื่องค้างใจ จุดดาวขอบคุณ">
 <meta property="og:title" content="19 Steps · ฝึกสติได้ทั้งวัน ในแบบของคุณ">
-<meta property="og:description" content="จัดชุดสติของคุณเอง เช้า กลางวัน เย็น ก่อนนอน ฝึกฟรีทุกแบบ ลงชื่อรอเปิดตัว">
+<meta property="og:description" content="จัดชุดสติของคุณเอง ฝึกแล้วได้แต้มไปแต่งหมู่บ้าน ลงชื่อรอเปิดตัว">
 <meta property="og:image" content="https://19stepsofficial-wq.github.io/19steps/img/web/og.jpg">
-<meta name="theme-color" content="#F3C9A9">
+<meta name="theme-color" content="#F6D7B4">
 <link rel="icon" href="icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=IBM+Plex+Sans+Thai+Looped:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="home.css">
 <script src="lang.js"></script>
 </head>
 <body>
 
 <!-- ท้องฟ้าทั้งหน้า: เปลี่ยนจากรุ่งเช้า กลางวัน เย็น ถึงกลางคืน ตามการเลื่อน -->
-<div class="sky" aria-hidden="true">
-  <div class="stars"></div>
-  <div class="orb"></div>
-  <div class="haze"></div>
-</div>
+<div class="sky" aria-hidden="true"><div class="stars"></div><div class="orb"></div></div>
 
 <header class="bar">
   <a class="brand" href="#top"><img src="img/web/icon.webp" alt="" width="34" height="34">19 Steps</a>
@@ -35,38 +31,62 @@
 
 <!-- 1. เปิดฉาก -->
 <section class="hero">
-  <p class="hero-clock" aria-hidden="true">06:00</p>
   <div class="hero-copy">
-    <h1>
-      <span data-l="th">ฝึกสติได้ทั้งวัน<br>ในแบบของคุณ</span>
-      <span data-l="en">Mindful moments,<br>all day long</span>
-    </h1>
+    <h1><span data-l="th">ฝึกสติได้ทั้งวัน<br>ในแบบของคุณ</span><span data-l="en">Mindful moments,<br>all day long</span></h1>
     <p class="lead">
-      <span data-l="th">จัดชุดฝึกสั้น ๆ ไว้ตามเวลาในชีวิตจริง ตื่นนอน ก่อนเริ่มงาน พักเที่ยง ระหว่างเดินทาง ก่อนนอน แล้วกดเดียวก็ฝึกต่อเนื่องจนจบชุด</span>
-      <span data-l="en">Build short practice sets around your real day: waking up, starting work, lunch break, the commute, bedtime. One tap plays the whole set.</span>
+      <span data-l="th">จัดชุดฝึกสั้น ๆ ตามเวลาในชีวิตจริง ฝึกแล้วได้แต้มบัวไปปลูกผัก เลี้ยงสัตว์ และแต่งบ้านน้องมาศ วันไหนใจไม่สบาย มีมุมพักใจรออยู่</span>
+      <span data-l="en">Build short practice sets around your real day. Practice earns lotus points to grow a garden, raise pets and decorate Maas's home. On hard days, a calm corner is waiting.</span>
     </p>
     <div class="cta">
       <a class="btn" href="#join"><span data-l="th">ลงชื่อรอเปิดตัว</span><span data-l="en">Join the waitlist</span></a>
       <a class="btn ghost" href="#day"><span data-l="th">ดูหนึ่งวันกับ 19 Steps</span><span data-l="en">See a day with 19 Steps</span></a>
     </div>
   </div>
-  <div class="hero-ground" aria-hidden="true">
-    <div class="walker"><div class="sprite maas-walk"></div></div>
+  <div class="hero-art">
+    <img src="img/web/village.webp" alt="" width="720" height="1080" fetchpriority="high">
+    <div class="walker" aria-hidden="true"><div class="sprite maas-walk"></div></div>
   </div>
-  <p class="scroll-hint" aria-hidden="true"><span data-l="th">เลื่อนลงเพื่อเริ่มวันใหม่</span><span data-l="en">Scroll to start the day</span></p>
 </section>
 
-<!-- 2. หนึ่งวัน: ปักหน้าจอไว้ แล้วเปลี่ยนเวลาไปตามการเลื่อน -->
+<!-- 2. หนึ่งวัน: ปักหน้าจอไว้ แล้วเปลี่ยนช่วงเวลาไปตามการเลื่อน -->
 <section class="day" id="day">
   <div class="stage">
-    <p class="clock" aria-hidden="true"><span class="clock-roll"><b>07:00</b><b>09:00</b><b>12:30</b><b>18:00</b><b>21:30</b></span></p>
+    <div class="notes">
+      <ol class="timeline" aria-hidden="true">
+        <li class="on">07:00</li><li>09:00</li><li>12:30</li><li>18:00</li><li>21:30</li>
+      </ol>
+      <article class="note on">
+        <p class="when"><b>07:00</b> <span data-l="th">ตื่นนอน</span><span data-l="en">Wake up</span></p>
+        <h2><span data-l="th">ตื่นมาพร้อมลมหายใจ</span><span data-l="en">Wake up with your breath</span></h2>
+        <p><span data-l="th">หายใจปลุกพลัง 2 นาที ดื่มน้ำ แล้วเดินช้า ๆ รับแสงเช้า ภารกิจเล็ก ๆ แทรกระหว่างขั้นได้ ติ๊กแล้วไปต่อเอง</span><span data-l="en">Two minutes of energizing breath, a glass of water, then a slow walk in the morning light. Small tasks sit between steps; tick them and the set moves on.</span></p>
+      </article>
+      <article class="note">
+        <p class="when"><b>09:00</b> <span data-l="th">เริ่มงาน</span><span data-l="en">Start work</span></p>
+        <h2><span data-l="th">โฟกัสกับน้องมาศ</span><span data-l="en">Focus with Maas</span></h2>
+        <p><span data-l="th">ตั้งเวลาโฟกัส 25 นาที น้องมาศนั่งเป็นเพื่อนในบ้านของเขา ถ้าคุณออกจากแอปไปเล่นมือถือ น้องมาศจะเผลอหลับ</span><span data-l="en">Set a 25-minute focus. Maas keeps you company at home, and dozes off if you leave the app to scroll.</span></p>
+      </article>
+      <article class="note">
+        <p class="when"><b>12:30</b> <span data-l="th">พักเที่ยง</span><span data-l="en">Lunch break</span></p>
+        <h2><span data-l="th">พักใจ 5 นาที</span><span data-l="en">A five-minute reset</span></h2>
+        <p><span data-l="th">หายใจตามวงกลมที่ขยายและหด หายใจออกยาวกว่าหายใจเข้า ช่วยให้ใจสงบลง</span><span data-l="en">Breathe with the circle as it grows and shrinks, exhaling longer than you inhale.</span></p>
+      </article>
+      <article class="note">
+        <p class="when"><b>18:00</b> <span data-l="th">ตอนเย็น</span><span data-l="en">Evening</span></p>
+        <h2><span data-l="th">ฝึกพร้อมคนที่บ้าน</span><span data-l="en">Practice with family</span></h2>
+        <p><span data-l="th">แชร์ชุดสติให้ครอบครัวหรือเพื่อน แต่ละคนฝึกตามเวลาของตัวเอง เห็นกันแค่ว่าวันนี้ใครฝึกแล้ว</span><span data-l="en">Share a set with family or friends. Everyone practices on their own time; you only see who has practiced today.</span></p>
+      </article>
+      <article class="note">
+        <p class="when"><b>21:30</b> <span data-l="th">ก่อนนอน</span><span data-l="en">Bedtime</span></p>
+        <h2><span data-l="th">ปิดวันอย่างสงบ</span><span data-l="en">End the day calmly</span></h2>
+        <p><span data-l="th">ฟังเสียงฝน ผ่อนคลายร่างกาย หายใจออกยาว แล้ววางมือถือ แอปเตือนตามเวลาที่ตั้งไว้ทุกวัน</span><span data-l="en">Rain sounds, a body scan, long exhales, then the phone goes down. The app reminds you at the time you choose.</span></p>
+      </article>
+    </div>
 
     <div class="phone" aria-hidden="true">
       <div class="notch"></div>
       <div class="screens">
-        <!-- 07:00 -->
         <div class="scr setcard on">
-          <div class="sc-head"><span class="sc-cover">🌅</span><div><b data-l="th">ตื่นเช้าสดใส</b><b data-l="en">Fresh morning</b><small>07:00 · <span data-l="th">7 นาที</span><span data-l="en">7 min</span></small></div></div>
+          <div class="sc-head"><span class="sc-cover">🌅</span><div><b><span data-l="th">ตื่นเช้าสดใส</span><span data-l="en">Fresh morning</span></b><small>⏰ 07:00 · <span data-l="th">7 นาที</span><span data-l="en">7 min</span></small></div></div>
           <ol class="sc-steps">
             <li><i>🌬️</i><span data-l="th">หายใจปลุกพลัง</span><span data-l="en">Energizing breath</span><em>2'</em></li>
             <li class="task"><i>✅</i><span data-l="th">ดื่มน้ำ 1 แก้ว</span><span data-l="en">Drink a glass of water</span></li>
@@ -76,34 +96,29 @@
           <p class="sc-auto">▶▶ <span data-l="th">ฝึกต่อเนื่อง</span><span data-l="en">Auto-continue</span></p>
           <p class="sc-go">▶ <span data-l="th">เริ่มชุดนี้</span><span data-l="en">Start this set</span></p>
         </div>
-        <!-- 09:00 -->
         <div class="scr focus">
           <div class="focus-room">
-            <div class="focus-timer"><b class="ft">25:00</b><small data-l="th">โฟกัสอยู่กับน้องมาศ</small><small data-l="en">Focusing with Maas</small></div>
-            <div class="sprite maas-idle sm"></div>
+            <div class="focus-timer"><b class="ft">25:00</b><small><span data-l="th">โฟกัสอยู่กับน้องมาศ</span><span data-l="en">Focusing with Maas</span></small></div>
+            <div class="sprite maas-idle"></div>
           </div>
-          <p class="focus-note"><span data-l="th">ทำงานทีละอย่าง น้องมาศอยู่เป็นเพื่อนจนครบเวลา</span><span data-l="en">One task at a time. Maas stays with you until the timer ends.</span></p>
         </div>
-        <!-- 12:30 -->
         <div class="scr breathe">
           <p class="br-title"><span data-l="th">คลายเครียดกลางวัน</span><span data-l="en">Midday reset</span></p>
           <div class="br-ring"><div class="br-dot"></div></div>
           <p class="br-cue"><span data-l="th">หายใจออกยาว ๆ</span><span data-l="en">Long, slow exhale</span></p>
           <p class="br-left">5:00</p>
         </div>
-        <!-- 18:00 -->
-        <div class="scr setcard dusk">
-          <div class="sc-head"><span class="sc-cover">🪷</span><div><b data-l="th">เดินจงกรมยามเย็น</b><b data-l="en">Evening walking</b><small>18:00 · <span data-l="th">13 นาที</span><span data-l="en">13 min</span></small></div></div>
+        <div class="scr setcard">
+          <div class="sc-head"><span class="sc-cover">🪷</span><div><b><span data-l="th">เดินจงกรมยามเย็น</span><span data-l="en">Evening walking</span></b><small>⏰ 18:00 · <span data-l="th">13 นาที</span><span data-l="en">13 min</span></small></div></div>
           <ol class="sc-steps">
             <li><i>👣</i><span data-l="th">เดินตามเสียงพุทโธ</span><span data-l="en">Walk with a guiding voice</span><em>10'</em></li>
             <li><i>🌬️</i><span data-l="th">หายใจสมดุล</span><span data-l="en">Coherent breathing</span><em>3'</em></li>
           </ol>
-          <div class="sc-peers"><span>👥 3/4</span><small data-l="th">ครอบครัวฝึกแล้ววันนี้</small><small data-l="en">family practiced today</small></div>
+          <div class="sc-peers"><span>👥 3/4</span><small><span data-l="th">ครอบครัวฝึกแล้ววันนี้</span><span data-l="en">family practiced today</span></small></div>
           <p class="sc-go">▶ <span data-l="th">เริ่มชุดนี้</span><span data-l="en">Start this set</span></p>
         </div>
-        <!-- 21:30 -->
         <div class="scr setcard night">
-          <div class="sc-head"><span class="sc-cover">🌙</span><div><b data-l="th">นอนหลับฝันดี</b><b data-l="en">Sleep well</b><small>21:30 · <span data-l="th">9 นาที</span><span data-l="en">9 min</span></small></div></div>
+          <div class="sc-head"><span class="sc-cover">🌙</span><div><b><span data-l="th">นอนหลับฝันดี</span><span data-l="en">Sleep well</span></b><small>⏰ 21:30 · <span data-l="th">9 นาที</span><span data-l="en">9 min</span></small></div></div>
           <ol class="sc-steps">
             <li><i>🌊</i><span data-l="th">ผ่อนคลายกับเสียงฝน</span><span data-l="en">Relax with rain</span><em>5'</em></li>
             <li><i>🌬️</i><span data-l="th">หายใจก่อนนอน</span><span data-l="en">Sleep breathing</span><em>4'</em></li>
@@ -114,30 +129,6 @@
         </div>
       </div>
     </div>
-
-    <div class="notes">
-      <article class="note on">
-        <h2><span data-l="th">ตื่นมาพร้อมลมหายใจ</span><span data-l="en">Wake up with your breath</span></h2>
-        <p><span data-l="th">หายใจปลุกพลัง 2 นาที ดื่มน้ำ แล้วเดินช้า ๆ รับแสงเช้า ภารกิจเล็ก ๆ แทรกระหว่างขั้นได้ ติ๊กแล้วไปต่อเอง</span><span data-l="en">Two minutes of energizing breath, a glass of water, then a slow walk in the morning light. Small tasks sit between steps; tick them and the set moves on.</span></p>
-      </article>
-      <article class="note">
-        <h2><span data-l="th">เริ่มงานกับน้องมาศ</span><span data-l="en">Start work with Maas</span></h2>
-        <p><span data-l="th">ตั้งเวลาโฟกัส 25 นาที น้องมาศนั่งทำงานเป็นเพื่อนในบ้านของเขา ถ้าคุณออกจากแอปไปเล่นมือถือ น้องมาศจะเผลอหลับ</span><span data-l="en">Set a 25-minute focus. Maas keeps you company in his little home, and dozes off if you leave the app to scroll.</span></p>
-      </article>
-      <article class="note">
-        <h2><span data-l="th">พักใจกลางวัน 5 นาที</span><span data-l="en">A five-minute midday reset</span></h2>
-        <p><span data-l="th">หายใจตามวงกลมที่ขยายและหด หายใจออกยาวกว่าหายใจเข้า งานวิจัยพบว่าช่วยให้อารมณ์ดีขึ้นและผ่อนคลาย</span><span data-l="en">Breathe with the circle as it grows and shrinks, exhaling longer than you inhale. Research links this to better mood and calm.</span></p>
-      </article>
-      <article class="note">
-        <h2><span data-l="th">ฝึกพร้อมคนที่บ้าน</span><span data-l="en">Practice with family</span></h2>
-        <p><span data-l="th">แชร์ชุดสติให้ครอบครัวหรือเพื่อน แต่ละคนฝึกตามเวลาของตัวเอง เห็นกันแค่ว่าวันนี้ใครฝึกแล้ว</span><span data-l="en">Share a set with family or friends. Everyone practices on their own time, and you only see who has practiced today.</span></p>
-      </article>
-      <article class="note">
-        <h2><span data-l="th">ปิดวันอย่างสงบ</span><span data-l="en">End the day calmly</span></h2>
-        <p><span data-l="th">ฟังเสียงฝน ผ่อนคลายร่างกาย หายใจออกยาว แล้ววางมือถือ แอปเตือนตามเวลาที่ตั้งไว้ทุกวัน</span><span data-l="en">Rain sounds, a body scan, long exhales, then the phone goes down. The app reminds you at the time you choose.</span></p>
-      </article>
-      <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
-    </div>
   </div>
 </section>
 
@@ -146,7 +137,7 @@
   <div class="build-pin">
     <div class="build-head">
       <h2><span data-l="th">ประกอบชุดสติจาก 9 แบบฝึก</span><span data-l="en">Build a set from 9 practices</span></h2>
-      <p><span data-l="th">เลือก เรียง ตั้งนาที แล้วตั้งเวลาเตือน หรือเริ่มจากชุดแนะนำ 9 ชุดที่จัดไว้ตามช่วงของวัน</span><span data-l="en">Pick, order, set the minutes and a reminder. Or start from 9 ready-made sets for each part of the day.</span></p>
+      <p><span data-l="th">เลือก เรียง ตั้งนาที ตั้งเวลาเตือน หรือเริ่มจากชุดแนะนำ 9 ชุดที่จัดไว้ตามช่วงของวัน</span><span data-l="en">Pick, order, set the minutes and a reminder. Or start from 9 ready-made sets for each part of the day.</span></p>
     </div>
     <div class="track">
       <div class="kind"><i>🌬️</i><h3><span data-l="th">ฝึกหายใจ</span><span data-l="en">Breathing</span></h3><p><span data-l="th">หายใจตามวงกลม 6 จังหวะ ปลุกพลัง ตั้งสติ หรือก่อนนอน</span><span data-l="en">Follow the circle. Six patterns for energy, focus, calm or sleep.</span></p></div>
@@ -163,7 +154,67 @@
   </div>
 </section>
 
-<!-- 4. บ้านน้องมาศและไอจอน -->
+<!-- 4. หมู่บ้าน: ฝึกแล้วได้แต้มบัว เอาไปปลูกผัก เลี้ยงสัตว์ ซื้อของแต่ง -->
+<section class="village" id="village">
+  <div class="v-stage">
+    <div class="v-bgs" aria-hidden="true">
+      <img class="v-bg on" src="img/web/village.webp" alt="" loading="lazy">
+      <img class="v-bg" src="img/web/farm.webp" alt="" loading="lazy">
+      <img class="v-bg" src="img/web/pets.webp" alt="" loading="lazy">
+      <img class="v-bg" src="img/web/maas-home.webp" alt="" loading="lazy">
+    </div>
+    <div class="v-points" aria-hidden="true">🪷 <b class="v-pts">120</b></div>
+    <div class="v-cards">
+      <article class="v-card on">
+        <p class="v-tag">🪷 <span data-l="th">แต้มบัว</span><span data-l="en">Lotus points</span></p>
+        <h2><span data-l="th">ทุกนาทีที่ฝึก ได้แต้มบัว</span><span data-l="en">Every minute of practice earns points</span></h2>
+        <p><span data-l="th">เอาแต้มไปใช้ในหมู่บ้าน มีบ้านน้องมาศ ร้านค้า แปลงผัก ลานสัตว์ ลำธาร เตาย่าง และท้องฟ้าดาว</span><span data-l="en">Spend them around the village: Maas's home, the shop, the garden, the pet yard, the stream, the grill and the starry sky.</span></p>
+      </article>
+      <article class="v-card">
+        <p class="v-tag">🌱 <span data-l="th">แปลงผัก</span><span data-l="en">Garden</span></p>
+        <h2><span data-l="th">ปลูกผัก รดน้ำ รอเก็บเกี่ยว</span><span data-l="en">Plant, water, harvest</span></h2>
+        <p><span data-l="th">ซื้อเมล็ดด้วยแต้ม รดน้ำให้ดินชุ่ม แล้วกลับมาเก็บผลผลิตไปขาย มีผัก 8 ชนิดและไม้ผลอีก 2 ต้น</span><span data-l="en">Buy seeds with points, keep the soil wet, come back to harvest and sell. Eight vegetables and two fruit trees.</span></p>
+        <div class="items">
+          <figure><img src="img/web/i-crop-tomato.webp" alt=""><figcaption>🪷 6</figcaption></figure>
+          <figure><img src="img/web/i-crop-carrot.webp" alt=""><figcaption>🪷 5</figcaption></figure>
+          <figure><img src="img/web/i-crop-strawberry.webp" alt=""><figcaption>🪷 10</figcaption></figure>
+          <figure><img src="img/web/i-crop-corn.webp" alt=""><figcaption>🪷 10</figcaption></figure>
+          <figure><img src="img/web/i-crop-watermelon.webp" alt=""><figcaption>🪷 20</figcaption></figure>
+          <figure><img src="img/web/i-crop-pumpkin.webp" alt=""><figcaption>🪷 18</figcaption></figure>
+        </div>
+      </article>
+      <article class="v-card">
+        <p class="v-tag">🐾 <span data-l="th">ลานสัตว์</span><span data-l="en">Pet yard</span></p>
+        <h2><span data-l="th">รับเลี้ยงสัตว์ ลุ้นสีหายาก</span><span data-l="en">Adopt pets, find rare colors</span></h2>
+        <p><span data-l="th">แมว สุนัข หมู นก และปลา แต่ละตัวมีสีธรรมดา สีหายาก และสีพิเศษ ให้อาหาร เล่นด้วย แล้วดูมันเดินเล่นในลาน</span><span data-l="en">Cats, dogs, pigs, birds and fish, each in common, rare and special colors. Feed them, play, and watch them roam.</span></p>
+        <div class="items">
+          <figure><img src="img/web/i-cat-orange.webp" alt=""><figcaption>🪷 80</figcaption></figure>
+          <figure><img src="img/web/i-dog-gold.webp" alt=""><figcaption>🪷 80</figcaption></figure>
+          <figure><img src="img/web/i-pig-pink.webp" alt=""><figcaption>🪷 80</figcaption></figure>
+          <figure><img src="img/web/i-bird-yellow.webp" alt=""><figcaption>🪷 60</figcaption></figure>
+          <figure><img src="img/web/i-fish-gold.webp" alt=""><figcaption>🪷 30</figcaption></figure>
+          <figure><img src="img/web/i-cat-calico.webp" alt=""><figcaption>✨</figcaption></figure>
+        </div>
+      </article>
+      <article class="v-card">
+        <p class="v-tag">🛒 <span data-l="th">ร้านค้า</span><span data-l="en">Shop</span></p>
+        <h2><span data-l="th">แต่งบ้านและสวนตามใจ</span><span data-l="en">Decorate home and garden</span></h2>
+        <p><span data-l="th">ของแต่งกว่า 50 ชิ้น ฉากใหม่ และของจัดปาร์ตี้ แตะของในฉากแล้วลากย้าย ย่อขยายได้เอง</span><span data-l="en">50+ decor items, new scenes and party goods. Tap anything in a scene to move or resize it.</span></p>
+        <div class="items">
+          <figure><img src="img/web/i-lantern.webp" alt=""><figcaption><span data-l="th">ฟรี</span><span data-l="en">Free</span></figcaption></figure>
+          <figure><img src="img/web/i-frangipani.webp" alt=""><figcaption>🪷 30</figcaption></figure>
+          <figure><img src="img/web/i-bonsai.webp" alt=""><figcaption>🪷 40</figcaption></figure>
+          <figure><img src="img/web/i-fairy-lights.webp" alt=""><figcaption>🪷 70</figcaption></figure>
+          <figure><img src="img/web/i-sky-lantern.webp" alt=""><figcaption>🪷 70</figcaption></figure>
+          <figure><img src="img/web/i-koi-pond.webp" alt=""><figcaption>🪷 120</figcaption></figure>
+        </div>
+      </article>
+    </div>
+    <ol class="v-dots" aria-hidden="true"><li class="on"></li><li></li><li></li><li></li></ol>
+  </div>
+</section>
+
+<!-- 5. บ้านน้องมาศและไอจอน -->
 <section class="home" id="home">
   <div class="home-scene">
     <img class="home-bg" src="img/web/jon-yard.webp" alt="" loading="lazy" width="720" height="1080">
@@ -173,15 +224,72 @@
     </div>
   </div>
   <div class="home-copy">
-    <h2><span data-l="th">ฝึกแล้วได้แต้ม<br>ไปแต่งบ้านให้เพื่อนตัวน้อย</span><span data-l="en">Practice earns points<br>for a home that grows</span></h2>
-    <p><span data-l="th">น้องมาศมีชานบ้าน ห้องในบ้าน และลานทรายของไอจอน แมวลายวัวที่ชอบขุด กลิ้ง และนอนกลางแดด แลกของแต่ง ปลูกผัก เลี้ยงสัตว์ และสะสมตัวละครกว่า 50 ตัว</span><span data-l="en">Maas has a veranda, a cosy room, and the sandbox yard of Jon, a cow-patterned cat who loves to dig, roll and nap. Trade points for decor, grow a garden, and collect 50+ characters.</span></p>
+    <h2><span data-l="th">น้องมาศกับไอจอน</span><span data-l="en">Maas and Jon</span></h2>
+    <p><span data-l="th">น้องมาศมีชานบ้าน ห้องในบ้าน และลานทรายของไอจอน แมวลายวัวที่ชอบขุด กลิ้ง และนอนกลางแดด ฝึกจนครบเวลา น้องมาศจะคาบจดหมายจากครอบครัวมาให้ และเรื่องเล่าตอนใหม่ปลดล็อกตามนาทีที่ฝึก</span><span data-l="en">Maas has a veranda, a cosy room, and the sandbox yard of Jon, a cow-patterned cat who loves to dig, roll and nap. Finish a session and Maas brings a letter from the family; new story chapters unlock as you practice.</span></p>
+    <p class="hint"><span data-l="th">ลองเลื่อนช้า ๆ ไอจอนจะเดินตาม หยุดเลื่อนแล้วเขาจะนอน</span><span data-l="en">Scroll slowly and Jon walks along. Stop, and he naps.</span></p>
     <div class="chars" aria-hidden="true">
-      <img src="img/web/c-kinnaree.webp" alt="" loading="lazy"><img src="img/web/c-golden-hong.webp" alt="" loading="lazy"><img src="img/web/c-baby-elephant.webp" alt="" loading="lazy"><img src="img/web/c-hornbill.webp" alt="" loading="lazy"><img src="img/web/c-koi.webp" alt="" loading="lazy"><img src="img/web/c-dugong.webp" alt="" loading="lazy">
+      <img src="img/web/c-kinnaree.webp" alt="" loading="lazy"><img src="img/web/c-baby-elephant.webp" alt="" loading="lazy"><img src="img/web/c-hornbill.webp" alt="" loading="lazy"><img src="img/web/c-koi.webp" alt="" loading="lazy"><img src="img/web/c-firefly.webp" alt="" loading="lazy"><img src="img/web/c-dugong.webp" alt="" loading="lazy">
+    </div>
+    <p class="quiet"><span data-l="th">สะสมตัวละครกว่า 50 ตัว</span><span data-l="en">Collect 50+ characters</span></p>
+  </div>
+</section>
+
+<!-- 6. มุมพักใจ: ลองเล่นได้จริง -->
+<section class="calm" id="calm">
+  <div class="calm-copy">
+    <h2><span data-l="th">มุมพักใจ</span><span data-l="en">The calm corner</span></h2>
+    <p><span data-l="th">วันที่ใจไม่สบาย เขียนเรื่องที่ค้างใจแล้วปล่อยมันไป หรือจุดดาวขอบคุณเรื่องดี ๆ ของวันนี้ ลองเล่นได้เลยตรงนี้</span><span data-l="en">On hard days, write down what weighs on you and let it go, or light a star for something good today. Try it right here.</span></p>
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-t="stream">🌊 <span data-l="th">ลอยไปกับลำธาร</span><span data-l="en">Float it away</span></button>
+      <button role="tab" aria-selected="false" data-t="grill">🍢 <span data-l="th">ย่างให้มอด</span><span data-l="en">Grill it away</span></button>
+      <button role="tab" aria-selected="false" data-t="stars">✨ <span data-l="th">จุดดาวขอบคุณ</span><span data-l="en">Light a star</span></button>
+    </div>
+    <p class="quiet"><span data-l="th">ในแอปยังมีเกาะพักใจ บันทึกอารมณ์ประจำสัปดาห์ และส่งกำลังใจถึงเพื่อน</span><span data-l="en">The app also has a safe-place island, a weekly mood log, and kind notes for friends.</span></p>
+  </div>
+
+  <div class="calm-scene">
+    <!-- ลำธาร -->
+    <div class="pane on" data-p="stream">
+      <img src="img/web/stream.webp" alt="" loading="lazy">
+      <div class="leaves" aria-live="polite"></div>
+      <form class="drop">
+        <div class="chips">
+          <button type="button" class="chip"><span data-l="th">งานยังไม่เสร็จ</span><span data-l="en">Unfinished work</span></button>
+          <button type="button" class="chip"><span data-l="th">กังวลเรื่องเงิน</span><span data-l="en">Money worries</span></button>
+          <button type="button" class="chip"><span data-l="th">ทะเลาะกับคนที่รัก</span><span data-l="en">An argument</span></button>
+        </div>
+        <div class="row"><input type="text" maxlength="40" aria-label="worry"><button type="submit">🍃 <span data-l="th">ลอยไป</span><span data-l="en">Let go</span></button></div>
+      </form>
+    </div>
+    <!-- เตาย่าง -->
+    <div class="pane" data-p="grill">
+      <img src="img/web/grill.webp" alt="" loading="lazy">
+      <div class="pile"></div>
+      <div class="smoke"></div>
+      <p class="pane-msg" aria-live="polite"></p>
+      <form class="drop">
+        <div class="chips">
+          <button type="button" class="chip"><span data-l="th">คำพูดที่ยังค้างใจ</span><span data-l="en">Words that still sting</span></button>
+          <button type="button" class="chip"><span data-l="th">ความผิดพลาดเมื่อวาน</span><span data-l="en">Yesterday's mistake</span></button>
+          <button type="button" class="chip"><span data-l="th">ความโกรธ</span><span data-l="en">Anger</span></button>
+        </div>
+        <div class="row"><input type="text" maxlength="40" aria-label="worry"><button type="submit">➕ <span data-l="th">วางบนเตา</span><span data-l="en">On the grill</span></button></div>
+        <button type="button" class="fire">🔥 <span data-l="th">ย่างเลย</span><span data-l="en">Grill now</span></button>
+      </form>
+    </div>
+    <!-- ดาว -->
+    <div class="pane" data-p="stars">
+      <img src="img/web/stars.webp" alt="" loading="lazy">
+      <div class="sky-tap" aria-live="polite"></div>
+      <p class="pane-tip"><span data-l="th">พิมพ์เรื่องที่อยากขอบคุณ แล้วแตะท้องฟ้าตรงไหนก็ได้</span><span data-l="en">Type something you're grateful for, then tap anywhere in the sky</span></p>
+      <form class="drop">
+        <div class="row"><input type="text" maxlength="40" aria-label="thanks"><span class="star-n">✨ 0</span></div>
+      </form>
     </div>
   </div>
 </section>
 
-<!-- 5. ฝึกร่วมกัน -->
+<!-- 7. ฝึกร่วมกัน -->
 <section class="together">
   <div class="circle" aria-hidden="true">
     <div class="ring"></div>
@@ -195,7 +303,7 @@
   </div>
 </section>
 
-<!-- 6. ฟรี และ Plus -->
+<!-- 8. ฟรี และ Plus -->
 <section class="plans">
   <h2><span data-l="th">ฝึกทุกแบบได้ฟรี</span><span data-l="en">Every practice is free</span></h2>
   <div class="plan-row">
@@ -204,8 +312,8 @@
       <ul>
         <li><span data-l="th">การฝึกครบทั้ง 9 แบบ</span><span data-l="en">All 9 practice types</span></li>
         <li><span data-l="th">ชุดสติ 1 ชุด และชุดภารกิจ 2 ชุด</span><span data-l="en">1 mindful set and 2 routines</span></li>
-        <li><span data-l="th">ฝึกร่วมกันในวง</span><span data-l="en">Practice circles</span></li>
-        <li><span data-l="th">บ้านน้องมาศ สวน และตัวละคร</span><span data-l="en">Maas's home, garden and characters</span></li>
+        <li><span data-l="th">หมู่บ้าน แปลงผัก ลานสัตว์ ร้านค้า</span><span data-l="en">Village, garden, pet yard, shop</span></li>
+        <li><span data-l="th">มุมพักใจและฝึกร่วมกันในวง</span><span data-l="en">Calm corner and practice circles</span></li>
       </ul>
     </div>
     <div class="plan plus">
@@ -220,7 +328,7 @@
   </div>
 </section>
 
-<!-- 7. ลงชื่อรอเปิดตัว -->
+<!-- 9. ลงชื่อรอเปิดตัว -->
 <section class="join" id="join">
   <img class="founder" src="img/web/c-founder.webp" alt="" width="200" height="200" loading="lazy">
   <h2><span data-l="th">ลงชื่อรอเปิดตัว</span><span data-l="en">Join the waitlist</span></h2>
@@ -235,12 +343,12 @@
   <p class="wl-fine"><span data-l="th">ใช้อีเมลนี้แจ้งข่าวเปิดตัวเท่านั้น ขอลบได้ทุกเมื่อที่ 19stepsofficial@gmail.com</span><span data-l="en">We only use this email for launch news. Ask us to remove it anytime at 19stepsofficial@gmail.com.</span></p>
 </section>
 
-<!-- 8. คำถาม -->
+<!-- 10. คำถาม -->
 <section class="faq">
   <h2><span data-l="th">คำถามที่พบบ่อย</span><span data-l="en">Questions</span></h2>
-  <details><summary><span data-l="th">ต้องจ่ายเงินไหม</span><span data-l="en">Do I have to pay?</span></summary><p><span data-l="th">ไม่ต้อง การฝึกทุกแบบใช้ฟรี Plus เป็นตัวเลือกสำหรับคนที่อยากมีชุดสติหลายชุดหรือแชร์ให้ครอบครัว</span><span data-l="en">No. Every practice is free. Plus is optional, for more sets or sharing with family.</span></p></details>
+  <details><summary><span data-l="th">ต้องจ่ายเงินไหม</span><span data-l="en">Do I have to pay?</span></summary><p><span data-l="th">ไม่ต้อง การฝึกทุกแบบใช้ฟรี แต้มบัวได้จากการฝึก Plus เป็นตัวเลือกสำหรับคนที่อยากมีชุดสติหลายชุดหรือแชร์ให้ครอบครัว</span><span data-l="en">No. Every practice is free, and lotus points come from practicing. Plus is optional, for more sets or sharing with family.</span></p></details>
   <details><summary><span data-l="th">ต้องต่อเน็ตตลอดไหม</span><span data-l="en">Do I need internet?</span></summary><p><span data-l="th">ไม่ต้อง ฝึกแบบออฟไลน์ได้ และดาวน์โหลดเสียงเก็บไว้ได้ ความคืบหน้าจะซิงก์เมื่อกลับมาออนไลน์</span><span data-l="en">No. You can practice offline and download sounds. Progress syncs when you're back online.</span></p></details>
-  <details><summary><span data-l="th">ข้อมูลของฉันปลอดภัยไหม</span><span data-l="en">Is my data private?</span></summary><p><span data-l="th">บันทึก ภารกิจ และรูปหน้าปกเก็บในเครื่องคุณเท่านั้น กล้องประมวลผลในเครื่อง ไม่ส่งภาพออกไป และลบบัญชีได้เองในแอป</span><span data-l="en">Notes, tasks and cover photos stay on your phone. The camera is processed on-device, and you can delete your account in the app.</span></p></details>
+  <details><summary><span data-l="th">เรื่องที่เขียนในมุมพักใจ มีใครเห็นไหม</span><span data-l="en">Can anyone see what I write in the calm corner?</span></summary><p><span data-l="th">ไม่มี เรื่องที่ลอยไป ย่างไป หรือจุดดาว เก็บในเครื่องของคุณเท่านั้น</span><span data-l="en">No. What you float, grill or write on a star stays on your phone.</span></p></details>
   <details><summary><span data-l="th">ใช้กับเด็กได้ไหม</span><span data-l="en">Can kids use it?</span></summary><p><span data-l="th">ได้ ในโหมดเด็กที่ผู้ปกครองตั้งรหัสไว้</span><span data-l="en">Yes, in Kids mode behind a parent PIN.</span></p></details>
   <details><summary><span data-l="th">เปิดให้ใช้เมื่อไร</span><span data-l="en">When does it launch?</span></summary><p><span data-l="th">เปิดบน iPhone ก่อน แล้วตามด้วย Android ลงชื่อไว้แล้วเราจะแจ้งทันที</span><span data-l="en">iPhone first, then Android. Join the waitlist and we'll tell you right away.</span></p></details>
 </section>
@@ -255,8 +363,6 @@
   <a href="mailto:19stepsofficial@gmail.com">19stepsofficial@gmail.com</a>
   <p>© 2026 19 Steps</p>
 </footer>
-
-
 
 <script src="home.js" defer></script>
 </body>
